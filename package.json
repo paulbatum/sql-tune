@@ -1,0 +1,28 @@
+{
+  "name": "sql-tune",
+  "version": "0.0.1",
+  "description": "An azure-cli plugin that creates missing indexes for your mobile service sql database",
+  "main": "sqltune.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "azure",
+    "sql"
+  ],
+  "author": "Paul Batum",
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "dependencies": {
+    "mssql": "0.5.3",
+    "mstring": "^0.1.2",
+    "underscore": "^1.6.0"
+  },
+  "plugins": {
+    "azure-cli": "./lib/sqltune.js"
+  }
+}
